@@ -1,0 +1,12 @@
+/* Adding a background image and adding a flex property that will allow the footer to always be pushed to the bottom of the page  */
+body {
+  /* background-image: url("../images/bg.png"); */
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/* Adding a flex property for the sticky footer */
+main {
+  flex: 1 0 auto;
+}
