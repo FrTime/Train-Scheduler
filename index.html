@@ -17,7 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- TITLE HERE -->
-    <title>New Prjoect</title>
+    <title>Train Scheduler</title>
 
 </head>
 
@@ -35,7 +35,74 @@
 
     <main>
 
+        <div class='row'>
+            <div class='col s10 offset-s1'>
+                <nav>
+                    <div class='nav-wrapper blue-grey'>
+                        <div class='brand-logo center'>Train Scheduler</div>
+                    </div>
+                </nav>
+            </div>
+        </div>
 
+        <div class='row'>
+            <div class='col s10 offset-s1'>
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title">Current Train Schedule</span>
+                        <br>
+
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Train Name</th>
+                                    <th>Destination</th>
+                                    <th>Frequency (min)</th>
+                                    <th>Next Arrival</th>
+                                    <th>Minutes Away</th>
+                                </tr>
+                            </thead>
+
+                            <tbody id='user-trains'></tbody>
+
+                        </table>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class='row'>
+            <div class='col s10 offset-s1'>
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title">Add Train</span>
+                        <br>
+                        <div class="input-field">
+                            <input placeholder="Train Name" id="train-name" type="text" class="validate">
+                            <label for="train-name">Train Name</label>
+                        </div>
+                        <div class="input-field">
+                            <input placeholder="Destination" id="train-destination" type="text" class="validate">
+                            <label for="train-destination">Destination</label>
+                        </div>
+                        <div class="input-field">
+                            <input placeholder="HH:mm - military time" id="train-time" type="text" class="validate">
+                            <label for="train-time">First Train Time</label>
+                        </div>
+                        <div class="input-field">
+                            <input placeholder="In minutes" id="train-frequency" type="text" class="validate">
+                            <label for="train-frequency">Frequency</label>
+                        </div>
+                    </div>
+                    <div class="card-action">
+                        <a class="waves-effect waves-light btn blue-grey" id="submit-train">Add Train to Schedule</a>
+                    </div>
+                </div>
+            </div>
 
     </main>
 

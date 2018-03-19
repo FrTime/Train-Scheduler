@@ -10,3 +10,12 @@ body {
 main {
   flex: 1 0 auto;
 }
+
+
+.card {
+  border-top: solid #607d8b 4px;
+}
+
+th {
+  font-weight: 700;
+}
